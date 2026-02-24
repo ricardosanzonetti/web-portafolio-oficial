@@ -244,3 +244,41 @@ font-size:13px;
 }
 
 }
+/* =========================
+   MOBILE FIX SCROLL
+========================= */
+
+html, body {
+  height: auto;
+  overflow-y: auto;
+}
+
+.editor {
+  min-height: 100vh;
+}
+
+.main {
+  overflow-y: auto;
+}
+
+/* Responsive móvil */
+@media (max-width: 768px) {
+
+  .editor {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+    height: auto;
+    display: flex;
+    gap: 10px;
+    overflow-x: auto;
+  }
+
+  .main {
+    height: auto;
+    padding-bottom: 120px;
+  }
+
+}

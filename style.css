@@ -195,3 +195,52 @@ animation:blink 1s infinite;
 @keyframes blink{
 50%{opacity:0;}
 }
+/* =========================
+MOBILE FIX (NO CAMBIA CONTENIDO)
+========================= */
+
+@media screen and (max-width: 900px){
+
+.editor{
+flex-direction: column;
+height: 100vh;
+}
+
+/* sidebar arriba estilo VS Code móvil */
+.sidebar{
+width:100%;
+height:auto;
+border-right:none;
+border-bottom:1px solid rgba(255,255,255,0.08);
+}
+
+.sidebar ul{
+display:flex;
+flex-direction:row;
+overflow-x:auto;
+gap:10px;
+}
+
+/* área principal */
+.main{
+width:100%;
+}
+
+/* ventana preview */
+.preview-window{
+width:95%;
+margin:auto;
+}
+
+/* contenido */
+#content{
+padding:20px;
+}
+
+/* terminal */
+.terminal{
+height:180px;
+font-size:13px;
+}
+
+}
